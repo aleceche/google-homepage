@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }
+body {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    color: black;
+}
+
+#gmail-link {
+    color: black;
+    text-decoration: none;
+}
+
+#gmail-link:hover {
+    text-decoration: underline;
+}
+
+#images-link {
+    color: black;
+    text-decoration: none;
+}
+
+#images-link:hover {
+    text-decoration: underline;
+}
+
+#app-launcher-image {
+    background-size: 32px 32px;
+    width: 25px;
+    opacity: 60%;
+}
+
+#app-launcher-image:hover {
+    opacity: 100%;
+}
+
+#profile-photo {
+    background-size: 32px 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+#search-box-border {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 300px;
+}
+
+[type='submit'] {
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.header-div {
+    color: black;
+    text-decoration: none;
+}
+
+.header-link {
+    color: black;
+    text-decoration: none;
+    opacity: 75%;
+}
+
+.header-link:hover {
+    text-decoration: underline;
+}
