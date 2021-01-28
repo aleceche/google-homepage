@@ -65,6 +65,74 @@ footer {
     border-radius: 50%;
 }
 
+@media (max-height: 400px) {
+    #google-logo {
+        animation-fill-mode: forwards;
+        animation-duration: 0.5s;
+        animation-name: slide-up-logo;
+    }
+
+    #search-elements {
+        animation-fill-mode: forwards;
+        animation-duration: 0.5s;
+        animation-name: slide-up-form;
+    }
+
+    @keyframes slide-up-logo {
+        0% {
+            transform: translateY(0%)
+        }
+
+        100% {
+            transform: translateY(-25%) scale(0.75);
+        }
+    }
+
+    @keyframes slide-up-form {
+        0% {
+            transform: translateY(0%)
+        }
+
+        100% {
+            transform: translateY(-80%);
+        }
+    }
+}
+
+@media (min-height: 400px) {
+    #google-logo {
+        animation-fill-mode: forwards;
+        animation-duration: 0.5s;
+        animation-name: slide-down-logo;
+    }
+
+    #search-elements {
+        animation-fill-mode: forwards;
+        animation-duration: 0.5s;
+        animation-name: slide-down-form;
+    }
+
+    @keyframes slide-down-logo {
+        0% {
+            transform: translateY(-25%) scale(0.75);
+        }
+
+        100% {
+            transform: translateY(0%);
+        }
+    }
+
+    @keyframes slide-down-form {
+        0% {
+            transform: translateY(-80%)
+        }
+
+        100% {
+            transform: translateY(0%);
+        }
+    }
+}
+
 #google-logo {
     position: relative;
     display: block;
@@ -112,7 +180,6 @@ footer {
     width: 100%;
     justify-content: center;
     opacity: 90%;
-    padding: 0 !important;
 }
 
 #footer-middle-right {
