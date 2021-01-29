@@ -24,6 +24,14 @@ footer {
     font-size: 14px;
 }
 
+@media (max-height: 450px) {
+    footer {
+        /*display: none;
+        visibility: hidden;*/
+        position: relative;
+    }
+}
+
 #header-left {
     position: fixed;
     top: 21px;
@@ -65,16 +73,16 @@ footer {
     border-radius: 50%;
 }
 
-@media (max-height: 400px) {
+@media (max-height: 525px) {
     #google-logo {
         animation-fill-mode: forwards;
-        animation-duration: 0.5s;
+        animation-duration: 0.25s;
         animation-name: slide-up-logo;
     }
 
     #search-elements {
         animation-fill-mode: forwards;
-        animation-duration: 0.5s;
+        animation-duration: 0.25s;
         animation-name: slide-up-form;
     }
 
@@ -99,7 +107,7 @@ footer {
     }
 }
 
-@media (min-height: 400px) {
+@media (min-height: 525px) {
     #google-logo {
         animation-fill-mode: forwards;
         animation-duration: 0.5s;
@@ -182,7 +190,7 @@ footer {
     opacity: 90%;
 }
 
-#footer-middle-right {
+#footer-bottom-right {
     position: fixed;
     display: flex;
     align-items: center;
@@ -191,13 +199,73 @@ footer {
     opacity: 90%;
 }
 
-#footer-bottom-left {
+#footer-middle-left {
     position: fixed;
     display: flex;
     align-items: center;
     bottom: 0;
     left: 16px;
     opacity: 90%;
+}
+
+@media (max-width: 600px) {
+    #footer-top-center {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        opacity: 90%;
+    }
+
+    #footer-bottom-right {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        opacity: 90%;
+        right: 0;
+    }
+    
+    #footer-middle-left {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        opacity: 90%;
+        left: 0;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    #footer-top-center {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        opacity: 90%;
+    }
+
+    #footer-bottom-right {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        opacity: 90%;
+        right: 30px;
+    }
+    
+    #footer-middle-left {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        opacity: 90%;
+        left: 30px;
+    }
 }
 
 [type='submit'] {
